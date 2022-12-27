@@ -1,14 +1,23 @@
 import * as React from "react";
-import Link from "next/link";
-import Header from "../../components/header";
+import { useState } from "react";
 import Banner from "../../components/banner";
 import ServiceTile from "../../components/ServiceTile";
 import NotificationTile from "../../components/NotificationTile";
-import { Pie } from "react-chartjs-2";
-import { PieChart } from "../../components/PieChart";
+import Header from '../../components/Header'
+
 import { LineChart } from "../../components/LineChart";
+import ShiftTimingTile from "../../components/ShiftTimingTile";
+import { LeaveReport } from "../../components/LeaveReport";
+
 
 export default function Home() {
+
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  React.useEffect(()=>{
+
+  },[])
+
   return (
     <div className="flex h-screen w-screen">
       <div className=" flex flex-col w-1/4 bg-white  p-4 place-items-center">
@@ -83,15 +92,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className=" flex space-x-3">
-          <div className="flex w-2/5 h-44 rounded-3xl p-3 bg-white ">
+        <div className=" flex space-x-3 ">
+          <div className=" flex flex-col w-2/5 space-y-3">
+          <div className="flex w-full h-44 rounded-3xl p-3 bg-white ">
             <p className=" font-medium text-sm">Leave Report</p>
             <div className=" flex place-items-center justify-center">
-            <PieChart></PieChart>
+            <LeaveReport></LeaveReport>
             </div>
             
           </div>
-          <div className="flex   w-3/5 h-70 rounded-3xl p-3 bg-white ">
+          <div className=" flex w-full h-32 bg-white rounded-3xl">
+          <ShiftTimingTile></ShiftTimingTile>
+            </div>
+          </div>
+          <div className="flex w-3/5 h-80 rounded-3xl p-3 bg-white ">
             
             <LineChart></LineChart>
           </div>
