@@ -22,7 +22,7 @@ export default function Home() {
             className=" z-0 w-80 px-4 h-14 bg-gray-200 rounded-full"
           ></input>
         </div>
-        <Link href="/dashboard"><button className="bg-indigo-700 hover:bg-indigo-800  w-80 h-14 rounded-full"> Login</button></Link>
+        <Link href="/dashboard"><button className="bg-indigo-700 hover:bg-indigo-800  w-80 h-14 rounded-full text-white"> Login</button></Link>
       </div>
       <div className="flex  w-1/2 h-screen  bg-zinc-200 ">
         
@@ -31,7 +31,7 @@ export default function Home() {
             src="/icons/bg-image.jpg"
             alt=""
           ></img>
-          <div className="  w-1/2 h-screen absolute z-10 p-8">
+          <div className="   h-screen absolute z-10 p-8">
           <div className=" flex w-full h-full bg-white backdrop-filter  backdrop-blur-2xl bg-opacity-20 rounded-3xl  ">
           <div className="  flex flex-col w-full place-items-center justify-center  space-y-4  ">
           <img

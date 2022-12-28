@@ -1,41 +1,28 @@
-import React from 'react'
-import Header from '../../components/Header'
-import ServicesMenue from '../../components/ServicesMenue'
-import SideBar from '../../components/SideBar'
+import React from "react";
+import Header from "../../components/Header";
+import SideBar from "../../components/SideBar";
 
-export default function Services() {
+export default function index() {
   return (
-    <div className=' flex w-screen h-screen'>
-        <SideBar></SideBar>
-        <div className=" flex flex-col px-10 space-y-4 bg-gray-100 w-3/4">
-            <Header></Header>
-            <div className='flex flex-col space-y-4'>
-                <p className=' text-lg font-semibold text-black'>Services</p>
-                <div className='flex justify-between bg-slate-200 rounded-3xl w-full h-72 p-8'>
-                    <ServicesMenue
-                     icon={"/Icons/AttendanceReport2.png"}
-                     title={"Attendance Report"}>
-                   
-                    </ServicesMenue>
-                    <ServicesMenue
-                     icon={"/Icons/AttendanceReport2.png"}
-                     title={"Attendance Report"}>
-                   
-                    </ServicesMenue>
-                    <ServicesMenue
-                     icon={"/Icons/AttendanceReport2.png"}
-                     title={"Attendance Report"}>
-                   
-                    </ServicesMenue>
-                    <ServicesMenue
-                     icon={"/Icons/AttendanceReport2.png"}
-                     title={"Attendance Report"}>
-                   
-                    </ServicesMenue>
-
-                </div>
+    <div className=" flex w-screen h-screen bg-gray-100">
+      <SideBar></SideBar>
+      <div className=" flex flex-col w-3/4 space-y-4 px-8">
+        <Header></Header>
+        <div className="flex flex-col space-y-4">
+          <p>shas</p>
+          <div className="p-8 bg-white round">
+            <div className="grid grid-cols-4 gap-4 justify-center place-items-center">
+              <div className="p-4 bg-slate-500 rounded-md flex w-12 h-12 justify-center place-items-center">1</div>
+              <div className="p-4 bg-slate-500 rounded-md flex w-12 h-12 justify-center place-items-center">1</div>
+              <div className="p-4 bg-slate-500 rounded-md flex w-12 h-12 justify-center place-items-center">1</div>
+              <div className="p-4 bg-slate-500 rounded-md flex w-12 h-12 justify-center place-items-center">1</div>
+              
             </div>
+
+          </div>
+
         </div>
+      </div>
     </div>
-  )
+  );
 }

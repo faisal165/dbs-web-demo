@@ -18,26 +18,26 @@ export default function Reports() {
             
                 <div className=' flex space-x-4'>
                 <div className=' flex  w-1/2 h-56 p-4  bg-white rounded-3xl justify-between'> 
-                <div><p className='text-sm font-semibold'> Salary Report</p></div>
+                <div><p className='text-lf font-semibold'> Salary Report</p></div>
                 <div className='flex w-44 h-44 object-contain'><SalaryReport></SalaryReport></div>
                 </div>
                 <div className=' flex  w-1/2 h-56 p-4 bg-white rounded-3xl justify-between'> 
-                <div><p className='text-sm font-semibold'> Attendence Report</p></div>
+                <div><p className='text-lg font-semibold'> Attendence Report</p></div>
                 <div className='flex w-44 h-44'><AttendenceReport></AttendenceReport></div>
                 </div>
                 </div>
                 <div className=' flex  w-full h-64 bg-white p-8 rounded-3xl justify-between '>
                  
                  <div className='flex flex-col w-44 h-44 place-items-center'>
-                    <p> Leave Report</p>
+                    <p className='text-lg font-semibold'> Leave Report</p>
                     <LeaveReport></LeaveReport>
                     </div>
                     <div className='flex flex-col w-44 h-44 place-items-center'>
-                    <p> Casual Leave</p>
+                    <p className='text-lg font-semibold'> Casual Leave</p>
                     <CasualLeave></CasualLeave>
                     </div>
                     <div className='flex flex-col w-44 h-44 place-items-center'>
-                    <p> SickLeave</p>
+                    <p className='text-lg font-semibold'> SickLeave</p>
                    <SickLeave></SickLeave>
                     </div>
 
